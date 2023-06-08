@@ -67,7 +67,6 @@ img {
 
 .header-container {
     display: flex;
-    height: 72px;
 }
 
 .header {
@@ -139,6 +138,8 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-color);
     font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-soc-link:hover {
@@ -352,7 +353,6 @@ img {
     background-color: var(--color-white);
     cursor: pointer;
     border-radius: 4px;
-    margin-right: 24px;
     border: none;
     display: block;
     border: 1px solid var(--color-cornflower);
