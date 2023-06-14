@@ -242,6 +242,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 
@@ -251,7 +252,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-color);
-    margin: 8px 0 8px 0;
+    margin-bottom: 8px;
 }
 .main-feature-paragraf{
     font-size: 16px;
