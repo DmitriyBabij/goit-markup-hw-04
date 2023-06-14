@@ -74,15 +74,52 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.header-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header-menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: var(--iris-color);
+}
+
+.current {
+    position: relative;
+    color: var(--iris-color);
+}
+
+.current::after {
+    content: "";
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--iris-color);
+    border-radius: 2px;
+}
+
+.header-menu-link:active {
+    color: var(--title-color);
+}
+
 .header-navigation {
     display: flex;
     align-items: center;
     margin-right: auto;
-}
-
-.header-menu {
-    display: flex;
-    gap: 40px;
 }
 
 .header-logo { 
@@ -101,42 +138,6 @@ img {
     color: var(--title-color);
 }
 
-.header-menu-item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
-}
-
-.current {
-    color: var(--iris-color);
-    position: relative;
-}
-
-.current::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 4px;
-    background-color: var(--iris-color);
-    border-radius: 2px;
-    width: 100%;
-}
-
-.header-menu-link {
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
-    display: block;
-    padding: 24px 0;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-}
-
 .header-address {
     font-style: normal;
     display: flex;
@@ -147,15 +148,6 @@ img {
 .header-soc {
     display: flex;
     gap: 40px;
-}
-
-.header-menu-link:hover,
-.header-menu-link:focus {
-    color: var(--iris-color);
-}
-
-.header-menu-link:active {
-    color: var(--iris-color);
 }
 
 .header-soc-link {
